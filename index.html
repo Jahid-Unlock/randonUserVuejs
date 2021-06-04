@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomUser</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <img :src="picture" :alt="firstName" v-bind:class="gender">
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>email : {{email}}</h3>
+        <button v-on:click = "getUser()" v-bind:class="gender">Get a Person</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
